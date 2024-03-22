@@ -3,7 +3,7 @@ class Base:
     @classmethod
     def method(cls):
         """Print greetings"""
-        print("Hello from Base")
+        print(f"Hello from {cls.__name__}")
 
 
 class Child(Base):
@@ -11,7 +11,7 @@ class Child(Base):
     @classmethod
     def method(cls):
         """Print greetings"""
-        print("Hello from Child")
+        print(f"Hello from {cls.__name__}")
 
 
 Base.method()
